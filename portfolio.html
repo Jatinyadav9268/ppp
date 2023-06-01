@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://Kit.fontawesome.com/a076d05399.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <div class="portfoliocontainer">
+        <div class="portfoliobox">
+            <div class="buttonbox">
+                <button>Graphic Work</button>
+                <button>Websites Work</button>
+            </div>
+            <div class="portfoliocontent1"data-aos="fade-left">
+                <img src="./images/fashion 2 copy.png">
+                <img src="./images/fashion 3 copy.png">
+                <img src="./images/handbags.png">
+            </div>
+            <div class="portfoliocontent2" data-aos="fade-right">
+                <img src="./images/instagram super.jpg">
+                <img src="./images/party.jpeg">
+                <img src="./images/travel poster.png">
+            </div>
+            <div class="portfoliocontent3">
+               <a href="https://jatinyadav9268.github.io/webwork/"data-aos="zoom-in"><img src="./images/Capture.JPG"></a>
+            </div>
+        </div>
+        <nav>
+            <div class="nav-bar">
+                <i class='bx bx-menu sidebarOpen' ></i>
+                <span class="logo navLogo"><a href="#">Jatin Yadav</a></span>
+                <div class="menu">
+                    <div class="logo-toggle">
+                        <span class="logo"><a href="#">Jatin Yadav</a></span>
+                        <i class='bx bx-x siderbarClose'></i>
+                    </div>
+                    <ul class="nav-links">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                    
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </nav>
+        </div>
+    </div>
+    <script>
+         const body = document.querySelector("body"),
+            nav = document.querySelector("nav"),
+     
+            sidebarOpen = document.querySelector(".sidebarOpen"),
+            siderbarClose = document.querySelector(".siderbarClose");
+       
+      // js code to toggle dark and light mode
+      
+      //   js code to toggle sidebar
+      sidebarOpen.addEventListener("click" , () =>{
+          nav.classList.add("active");
+      });
+      body.addEventListener("click" , e =>{
+          let clickedElm = e.target;
+          if(!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains("menu")){
+              nav.classList.remove("active");
+          }
+      });
+    </script>
+      </script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init({
+            duration: 1000,
+            easing: 'ease',
+            once: true,
+            mirror: false,
+        });
+      </script>
+</body>
+</html>

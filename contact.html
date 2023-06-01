@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="index.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="contactcontainer">
+        <div class="contactbox"data-aos="fade-in">
+            <h1>Contact</h1>
+            <div class="contactline"></div>
+            <h2>Contact Me</h2>
+            <div class="contactdetail1">
+                <div class="conbox1"data-aos="fade-right">
+                    <h1>My Address</h1>
+                    <p>Krishan-vihar o-47,Near rajni Gupta Hostpital</p>
+                    <div class="addcircle">
+                    <img src="./images/location.png">
+                    </div>
+                </div>
+                <div class="conbox2"data-aos="fade-left">
+                    <h1>Social Media</h1>
+                    <div class="addcircle2">
+                        <img src="./images/share.png">                    
+                    </div>
+                    <div class="socialicon">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+                </div>
+                
+            </div>
+            <div class="contactdetail2">
+                <div class="conbox3"data-aos="fade-left">
+                    <h1>Email Me</h1>
+                    <p>jatinyadav09876@<br>gmail.com</p>
+                    <div class="addcircle3">
+                    <img src="./images/email.png">
+                    </div>
+                </div>
+                <div class="conbox4"data-aos="fade-right">
+                    <h1>Call Me</h1>
+                    <p>8178441743</p>
+                    <div class="addcircle4">
+                     <img src="./images/call.png">
+                    </div>
+                </div>
+            </div>
+            <div class="contactform"data-aos="slide-up">
+                <input type="text" placeholder="Your Name" class="namein">
+                <input type="email" placeholder="Your Email" class="emailin">
+                <input type="text" placeholder="Subject" class="subjectin">
+                <textarea name="text" placeholder="Message" class="textarrr"></textarea>
+                <button>Send Message</button>
+            </div>
+        <nav>
+            <div class="nav-bar">
+                <i class='bx bx-menu sidebarOpen' ></i>
+                <span class="logo navLogo"><a href="#">Jatin Yadav</a></span>
+                <div class="menu">
+                    <div class="logo-toggle">
+                        <span class="logo"><a href="#">Jatin Yadav</a></span>
+                        <i class='bx bx-x siderbarClose'></i>
+                    </div>
+                    <ul class="nav-links">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                   
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+</div>
+<script>
+        const body = document.querySelector("body"),
+        nav = document.querySelector("nav"),
+        
+           sidebarOpen = document.querySelector(".sidebarOpen"),
+           siderbarClose = document.querySelector(".siderbarClose");
+      
+     // js code to toggle dark and light mode
+     
+     //   js code to toggle sidebar
+     sidebarOpen.addEventListener("click" , () =>{
+         nav.classList.add("active");
+     });
+     body.addEventListener("click" , e =>{
+         let clickedElm = e.target;
+         if(!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains("menu")){
+             nav.classList.remove("active");
+         }
+     });
+   </script>
+     </script>
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script>
+       AOS.init({
+           duration: 1000,
+           easing: 'ease',
+           once: true,
+           mirror: false,
+       });
+     </script>
+<script src="https://Kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>

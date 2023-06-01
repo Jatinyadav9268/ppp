@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://Kit.fontawesome.com/a076d05399.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <div class="container2">
+      <div class="aboutbox" data-aos="zoom-in">
+        <h1>About</h1>
+        <div class="line2"></div>
+        <h2>LEARN MORE ABOUT ME</h2>
+        <h3>Front-end Developer & Graphic Designer</h3>
+        <div class="photo">
+          <img src="./images/john-towner-JgOeRuGD_Y4-unsplash.jpg"data-aos="slide-right">
+          <div class="cc" data-aos="fade-left">
+            <h1><span>></span> Birthday: 31 Dec 2004</h1>
+            <h2><span>></span> Phone: 8178447173</h2>
+            <h3><span>></span> City: India, New-delhi</h3>
+            <h4><span>></span> Age: 19</h4>
+            <h5><span>></span> Email: jatinyadav09876</h5>
+            <h6><span>></span> Freelance: Available</h6>
+            <p>I'm a web developer and Graphic Designer with 1.5 years years of experience creating dynamic and visually appealing websites . I specialize in using HTML, CSS, JavaScript, and other programming languages to create seamless user experiences that engage visitors and meet business needs. Throughout my career, I have worked on a variety of projects, ranging from small business websites to complex e-commerce platforms.</p>
+            
+          </div>
+        </div>
+        <div class="box" data-aos="zoom-in">
+            <p>HTML</p>
+            <div class="progress">
+                <div class="progressbar">
+                    <span>90%</span>
+                </div>
+            </div>
+            <p>CSS</p>
+            <div class="progress">
+                <div class="progressbar">
+                    <span>80%</span>
+                </div>
+            </div>
+            <p>JAVASCRIPT</p>
+            <div class="progress">
+                <div class="progressbar">
+                    <span>65%</span>
+                </div>
+            </div>
+            <p>Bootstarp</p>
+            <div class="progress">
+                <div class="progressbar">
+                    <span>75%</span>
+                </div>
+            </div>
+            <p>Photoshop</p>
+            <div class="progress">
+                <div class="progressbar">
+                    <span>80%</span>
+                </div>
+            </div>
+            <p>Figma</p>
+            <div class="progress">
+                <div class="progressbar">
+                    <span>70%</span>
+                </div>
+            </div>
+            <p>WordPress</p>
+            <div class="progress">
+                <div class="progressbar">
+                    <span>65%</span>
+                </div>
+            </div>
+            <p>Communication</p>
+            <div class="progress">
+                <div class="progressbar">
+                    <span>65%</span>
+                </div>
+            </div>
+          </div>
+      </div>
+      <nav>
+        <div class="nav-bar">
+            <i class='bx bx-menu sidebarOpen' ></i>
+            <span class="logo navLogo"><a href="#">Jatin</a></span>
+            <div class="menu">
+                <div class="logo-toggle">
+                    <span class="logo"><a href="#">Jatin</a></span>
+                    <i class='bx bx-x siderbarClose'></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                 
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            
+            </div>
+        </div>
+    </nav>
+    </div>
+    <script>
+      const body = document.querySelector("body"),
+            nav = document.querySelector("nav"),
+            sidebarOpen = document.querySelector(".sidebarOpen"),
+            siderbarClose = document.querySelector(".siderbarClose");
+           
+    
+      sidebarOpen.addEventListener("click" , () =>{
+          nav.classList.add("active");
+      });
+      body.addEventListener("click" , e =>{
+          let clickedElm = e.target;
+          if(!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains("menu")){
+              nav.classList.remove("active");
+          }
+      });
+
+      window.addEventListener('load',()=>{
+    let progressBars = document.querySelectorAll(".progressbar");
+    let values = [
+        '90%',
+        '80%',
+        '65%',
+        '75%',
+        '80%',
+        '70%',
+        '65%',
+        '65%'
+    ]
+    progressBars.forEach((progress,index)=>{
+        progress.style.width = values[index];
+    })
+  })
+      </script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init({
+            duration: 1000,
+            easing: 'ease',
+            once: true,
+            mirror: false,
+        });
+      </script>
+</body>
+</html>
